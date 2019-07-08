@@ -11,4 +11,14 @@ public partial class main : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void NavbuttonHome_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
+
+    protected void NavbuttonShop_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
 }

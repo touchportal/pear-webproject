@@ -1,20 +1,102 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
 
 <!DOCTYPE html>
-
 <html>
+
+<!-- HEAD -->
 <head runat="server">
-    <title></title>
+    <title>Pear Inc.</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <!-- STYLE -->
+    <style>
+        /* BODY */
+        body {
+             font-family: Arial;
+             background: #ffffff;
+             width: 100%;
+        }
+        /* NAVIGATION BAR */
+        .navbar {
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+            color: #000000;
+            background-color: #ffffff;
+        }
+        .navbar a {
+            box-sizing: border-box;
+            display: inline-block;
+            position: relative;
+            height: 50px;
+            z-index: 1;
+            vertical-align: top;
+            width: 135px;
+            text-align: center;
+            padding-top: 16px;
+            text-decoration: none;
+            color: #666666;
+            background-color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar a:hover {
+            background-color: #f1f1f1;
+            color: #333333;
+        }
+        .navbuttonHome {
+            padding: 5px;
+            padding-top: 12px;
+            padding-right: 20px;
+        }
+        .navbuttonShop {
+            padding: 5px;
+            padding-top: 12px;
+            padding-left: 20px;
+        }
+    </style>
 </head>
+
+<!-- BODY -->
 <body>
-    <form id="form1" runat="server">
+    <form id="mainform" runat="server">
+    <div class="navbar">
+        <asp:ImageButton
+            ID="navbuttonHome"
+            runat="server" 
+            CssClass="navbuttonHome"
+            Height="24px"
+            Width="24px"
+            AlternateText="Pear Inc. Logo"
+            ImageAlign="middle"
+            ImageUrl="icons/pear-inc-logo.png"
+            OnClick="NavbuttonHome_Click"
+        />
+        <a href="#">Home</a>
+        <a href="#">Buy Now</a>
+        <a href="#">About</a>
+        <a href="#">Join Us</a>
+        <a href="#">Contact</a>
+        <asp:ImageButton
+            ID="navbuttonShop"
+            runat="server" 
+            CssClass="navbuttonShop"
+            Height="24px"
+            Width="24px"
+            AlternateText="Shopping Bag"
+            ImageAlign="middle"
+            ImageUrl="icons/shopping-bag-empty.png"
+            OnClick="NavbuttonShop_Click"
+        />
+    </div>
     <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
+        <!-- PLACEHOLDER -->
+        <asp:ContentPlaceHolder id="body" runat="server">
         </asp:ContentPlaceHolder>
     </div>
     </form>
 </body>
+
 </html>
