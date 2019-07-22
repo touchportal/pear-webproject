@@ -19,28 +19,26 @@
             padding-left: 0;
             color: #ffffff;
             background-color: #333333;
-        }
-        .promo-content {
-            max-width: 500px;
+            display: inline-block;
         }
         .promo-content-left {
-
+            float: left;
+            position: relative;
+            box-sizing: border-box;
+            display: inline-block;
+            position: relative;
+            height: 350px;
+            z-index: 1;
+            vertical-align: top;
+            width: 200px;
+            text-align: center;
+            margin: 7em 1em 7em 1em;
         }
         .promo-content-right {
-
-        }
-        .promo-image {
-            padding: 4em 0;
-            padding-left: 7em;
-        }
-        .promo-header {
-
-        }
-        .promo-price {
-
-        }
-        .promo-button {
-
+            float: right;
+            width: 70%;
+            position: relative;
+            top: -300px;
         }
         /* COLUMN */
         
@@ -66,17 +64,8 @@
                 </div>
             </div>
             <div class="promo-content-right">
-                <div class="promo-header">
-
-                </div>
-                <div class="promo-price">
-
-                </div>
-                <div class="promo-button">
-
-                </div>
+                <span>hello fuck you</span>
             </div>
         </div>
     </div>
 </asp:Content>
-
