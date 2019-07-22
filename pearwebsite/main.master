@@ -56,6 +56,39 @@
             padding-top: 12px;
             padding-left: 20px;
         }
+        /* ALTERNATE NAVIGATION BAR */
+        @media screen and (max-width: 900px) {
+            .navbar {
+                max-width: 135px;
+            }
+            .navbar a {
+                display: inline-block;
+                padding-left: 0;
+                width: 100%;
+            }
+            .navbar a:hover {
+                background-color: #f1f1f1;
+                color: #333333;
+            }
+            .navbuttonHome {
+                padding: 5px;
+                padding-top: 12px;
+                padding-left: 57px;
+            }
+            .navbuttonShop {
+                padding: 5px;
+                padding-top: 12px;
+                padding-left: 57px;
+            }
+        }
+        /* FOOTER */
+        .footer {
+            padding: 10px;
+            position: relative;
+            text-align: center;
+            color: #000000;
+            background-color: #ffffff;
+        }
     </style>
 </head>
 
@@ -65,7 +98,7 @@
     <div class="navbar">
         <asp:ImageButton
             ID="navbuttonHome"
-            runat="server" 
+            runat="server"
             CssClass="navbuttonHome"
             Height="24px"
             Width="24px"
@@ -91,10 +124,13 @@
             OnClick="NavbuttonShop_Click"
         />
     </div>
-    <div>
+    <div class="placeholder">
         <!-- PLACEHOLDER -->
         <asp:ContentPlaceHolder id="body" runat="server">
         </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer">
+        <span>Copyright © 2019 Pear Inc. All rights reserved.</span>
     </div>
     </form>
 </body>
