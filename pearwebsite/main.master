@@ -9,18 +9,35 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <!-- STYLE -->
+    <link rel="stylesheet" href="https://use.typekit.net/qbr6fvl.css">
     <style>
+        /* STYLE RESET */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .unselectable {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
         /* BODY */
         body {
-             font-family: Arial;
-             background: #ffffff;
-             width: 100%;
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: #ffffff;
+            width: 100%;
         }
         /* NAVIGATION BAR */
         .navbar {
             margin: 0 auto;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 35px;
             max-width: 800px;
             position: relative;
             z-index: 2;
@@ -31,30 +48,34 @@
             box-sizing: border-box;
             display: inline-block;
             position: relative;
-            height: 50px;
+            height: 60px;
+            width: 130px;
             z-index: 1;
             vertical-align: top;
-            width: 135px;
             text-align: center;
             padding-top: 16px;
             text-decoration: none;
-            color: #666666;
+            color: #999999;
             background-color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16pt;
         }
         .navbar a:hover {
             background-color: #f1f1f1;
-            color: #333333;
+            color: #666666;
         }
         .navbuttonHome {
-            padding: 5px;
-            padding-top: 12px;
-            padding-right: 20px;
+            margin-top: 10px;
+            padding: 7px;
+            cursor: pointer;
         }
         .navbuttonShop {
-            padding: 5px;
-            padding-top: 12px;
-            padding-left: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 7px;
+            cursor: pointer;
         }
         /* ALTERNATE NAVIGATION BAR */
         @media screen and (max-width: 900px) {
@@ -71,22 +92,19 @@
                 color: #333333;
             }
             .navbuttonHome {
-                padding: 5px;
-                padding-top: 12px;
-                padding-left: 57px;
+                padding: 5px 57px 12px 57px;
             }
             .navbuttonShop {
-                padding: 5px;
-                padding-top: 12px;
-                padding-left: 57px;
+                padding: 5px 57px 12px 57px;
+                margin-left: 0;
             }
         }
         /* FOOTER */
         .footer {
-            padding: 10px;
+            margin: 1em;
             position: relative;
             text-align: center;
-            color: #000000;
+            color: #333333;
             background-color: #ffffff;
         }
     </style>
@@ -95,42 +113,44 @@
 <!-- BODY -->
 <body>
     <form id="mainform" runat="server">
-    <div class="navbar">
-        <asp:ImageButton
-            ID="navbuttonHome"
-            runat="server"
-            CssClass="navbuttonHome"
-            Height="24px"
-            Width="24px"
-            AlternateText="Pear Inc. Logo"
-            ImageAlign="middle"
-            ImageUrl="icons/pear-inc-logo.png"
-            OnClick="NavbuttonHome_Click"
-        />
-        <a href="#">Home</a>
-        <a href="#">Buy Now</a>
-        <a href="#">About</a>
-        <a href="#">Join Us</a>
-        <a href="#">Contact</a>
-        <asp:ImageButton
-            ID="navbuttonShop"
-            runat="server" 
-            CssClass="navbuttonShop"
-            Height="24px"
-            Width="24px"
-            AlternateText="Shopping Bag"
-            ImageAlign="middle"
-            ImageUrl="icons/shopping-bag-empty.png"
-            OnClick="NavbuttonShop_Click"
-        />
-    </div>
-    <div class="placeholder">
-        <!-- PLACEHOLDER -->
-        <asp:ContentPlaceHolder id="body" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
-    <div class="footer">
-        <span>Copyright © 2019 Pear Inc. All rights reserved.</span>
+    <div class="unselectable">
+        <div class="navbar">
+            <asp:ImageButton
+                ID="navbuttonHome"
+                runat="server"
+                CssClass="navbuttonHome"
+                Height="24px"
+                Width="24px"
+                AlternateText="Pear Inc. Logo"
+                ImageAlign="middle"
+                ImageUrl="icons/pear-inc-logo.png"
+                OnClick="NavbuttonHome_Click"
+            />
+            <a href="#">Home</a>
+            <a href="#">Buy Now</a>
+            <a href="#">About</a>
+            <a href="#">Join Us</a>
+            <a href="#">Contact</a>
+            <asp:ImageButton
+                ID="navbuttonShop"
+                runat="server" 
+                CssClass="navbuttonShop"
+                Height="24px"
+                Width="24px"
+                AlternateText="Shopping Bag"
+                ImageAlign="middle"
+                ImageUrl="icons/shopping-bag-empty.png"
+                OnClick="NavbuttonShop_Click"
+            />
+        </div>
+        <div class="placeholder">
+            <!-- PLACEHOLDER -->
+            <asp:ContentPlaceHolder id="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <span>Copyright © 2019 Pear Inc. All rights reserved.</span>
+        </div>
     </div>
     </form>
 </body>
