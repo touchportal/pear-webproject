@@ -12,17 +12,27 @@
         .body {
             color: #ffffff
         }
-        /* PROMOTIONAL CONTENT */
+        /* BLOCK CONTENT */
         .content {
-            height: 100%;
-            width: 100%;
-            padding-left: 0;
-            color: #000000;
+            margin: 0 auto;
+            padding-left: 65px;
+            padding-right: 65px;
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
             background-color: #f1f1f1;
         }
         .block {
-            width: 100%;
-            height: 500px;
+            box-sizing: border-box;
+            display:inline-block;
+            position: relative;
+            height: 200px;
+            width: 200px;
+            z-index: 1;
+            vertical-align: top;
+            text-align: center;
+            margin: 1px;
             background-color: #420690;
         }
         .block-content {
@@ -41,6 +51,7 @@
         .block-image {
 
         }
+        
     </style>
 </asp:Content>
 
@@ -48,9 +59,9 @@
 <asp:Content ID="body" ContentPlaceHolderID="body" Runat="Server">
     <div class="body">
         <div class="content">
-            <span>
-                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa
-            </span>
+            <div class="block">box 1</div>
+            <div class="block">box 2</div>
+            <div class="block">box 3</div>
         </div>
     </div>
 </asp:Content>
