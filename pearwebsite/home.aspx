@@ -58,7 +58,7 @@
             padding-right: 50px;
             max-width: 700px;
             position: relative;
-            z-index: 2;
+            z-index: 3;
             color: #ffffff;
             background-color: #333333;
         }
@@ -68,7 +68,7 @@
             position: relative;
             height: 270px;
             width: 150px;
-            z-index: 1;
+            z-index: 2;
             vertical-align: top;
             text-align: center;
             margin: 3em 0 3em 5em;
@@ -80,7 +80,7 @@
             position: relative;
             height: 270px;
             width: 150px;
-            z-index: 0;
+            z-index: 1;
             vertical-align: top;
             text-align: left;
             margin: 4em 0 0 5em;
