@@ -31,13 +31,11 @@
             font-size: 18pt;
         }
         h2 {
-            margin-left: 14pt;
-            font-size: 35pt;
+            margin-left: 0;
+            font-size: 32pt;
         }
         h3 {
-            margin-left: 105pt;
-            margin-top: 7pt;
-            font-size: 35pt;
+            font-size: 18pt;
         }
         h4 {
             text-align: center;
@@ -74,7 +72,6 @@
             margin: 3em 0 3em 235px;
             background-color: inherit;
             padding-bottom: 7em;
-            border-radius: 0px;
             border-color: #666666;
             border-bottom: ridge;
         }
@@ -98,32 +95,42 @@
         }
         .timeline {
             margin: 0 auto;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding: 1em 50px;
             max-width: 700px;
             position: relative;
             z-index: 3;
             color: #999999;
             background-color: #f1f1f1;
         }
-        .timeline-content {
+        .timeline-content, .timeline-content-alt {
             box-sizing: border-box;
             display: inline-block;
             position: relative;
-            width: 265px;
-            height: 97px;
+            width: 70%;
+            height: 100%;
             padding: 10px 30px;
             z-index: 2;
             vertical-align: top;
             text-align: center;
-            margin: 3em 0 3em 235px;
-            background-color: inherit;
+            margin: 1em 0 1em 70px;
+            color: #333333;
+            background-color: #ffffff;
+        }
+        .timeline-content-alt {
+            margin: 1em 0 1em 140px;
         }
         .timeline-year {
-
+            display: inline-block;
+            text-align: left;
+            padding: 0 15px 10px 15px;
+            margin-bottom: 10px;
+            border-color: #666666;
+            border-bottom: ridge;
         }
         .timeline-text {
-
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 10px;
         }
     </style>
 </asp:Content>
@@ -142,11 +149,37 @@
     </div>
     <div class="body-timeline unselectable">
         <div class="timeline">
-            <div class="timeline-year">
-                <h2>2000</h2>
+            <div class="timeline-content">
+                <div class="timeline-year">
+                    <h2>2007</h2>
+                </div>
+                <div class="timeline-text">
+                    <h3>The company revealed the revolutionary PearBook 1, poised to take over the personal computer market.</h3>
+                </div>
             </div>
-            <div class="timeline-text">
-                <h3>The company was founded this year.</h3>
+            <div class="timeline-content-alt">
+                <div class="timeline-year">
+                    <h2>2009</h2>
+                </div>
+                <div class="timeline-text">
+                    <h3>The PearBook 2 replaces the original PearBook, packed full with even more features than its predecessor.</h3>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-year">
+                    <h2>2010</h2>
+                </div>
+                <div class="timeline-text">
+                    <h3>Pear Inc. unveils its new logo, designed by Chan Wen Loong, alongside the PearBook 3.</h3>
+                </div>
+            </div>
+            <div class="timeline-content-alt">
+                <div class="timeline-year">
+                    <h2>2011</h2>
+                </div>
+                <div class="timeline-text">
+                    <h3>The PearBook Pro reveal stunned the world with technology created to make a mark in professional industries like Hollywood.</h3>
+                </div>
             </div>
         </div>
     </div>
