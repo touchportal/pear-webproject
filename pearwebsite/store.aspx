@@ -78,7 +78,7 @@
             padding: 2em;
             margin: 0 0 2em 47px;
             background-color: #ffffff;
-            box-shadow: 5px 5px 15px #999999;
+            box-shadow: 3px 3px 7px #999999;
         }
         .block-content {
             background-color: inherit;
