@@ -119,6 +119,11 @@
         .timeline-content-alt {
             margin: 1em 0 1em 9em;
         }
+        .timeline-content:hover, .timeline-content-alt:hover {
+            top: -2px;
+            left: -2px;
+            box-shadow: 7px 7px 30px #999999;
+        }
         .timeline-year, .timeline-year-alt {
             display: inline-block;
             text-align: left;
