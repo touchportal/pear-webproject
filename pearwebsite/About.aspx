@@ -31,15 +31,13 @@
             font-size: 18pt;
         }
         h2 {
-            margin-left: 0;
             font-size: 32pt;
         }
         h3 {
-            font-size: 18pt;
+            font-size: 32pt;
         }
         h4 {
-            text-align: center;
-            font-size: 32pt;
+            font-size: 18pt;
         }
         /* ABOUT CONTENT */
         .body-about {
@@ -73,7 +71,8 @@
             background-color: inherit;
             padding-bottom: 7em;
             border-color: #666666;
-            border-bottom: ridge;
+            border-bottom: solid;
+            border-bottom-width: 3px;
         }
         .about-content {
             box-sizing: border-box;
@@ -112,20 +111,28 @@
             z-index: 2;
             vertical-align: top;
             text-align: center;
-            margin: 1em 0 1em 70px;
+            margin: 1em 0 1em 5em;
             color: #333333;
             background-color: #ffffff;
+            box-shadow: 5px 5px 15px #999999;
         }
         .timeline-content-alt {
-            margin: 1em 0 1em 140px;
+            margin: 1em 0 1em 9em;
         }
-        .timeline-year {
+        .timeline-year, .timeline-year-alt {
             display: inline-block;
             text-align: left;
-            padding: 0 15px 10px 15px;
+            padding: 0 10px 10px 10px;
             margin-bottom: 10px;
-            border-color: #666666;
-            border-bottom: ridge;
+            border-bottom: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: #999999;
+        }
+        .timeline-year {
+            margin-left: 4em;
+        }
+        .timeline-year-alt {
+            margin-right: 4em;
         }
         .timeline-text {
             display: inline-block;
@@ -154,15 +161,15 @@
                     <h2>2007</h2>
                 </div>
                 <div class="timeline-text">
-                    <h3>The company revealed the revolutionary PearBook 1, poised to take over the personal computer market.</h3>
+                    <h4>The company revealed the revolutionary PearBook 1, poised to take over the personal computer market.</h4>
                 </div>
             </div>
             <div class="timeline-content-alt">
-                <div class="timeline-year">
-                    <h2>2009</h2>
+                <div class="timeline-year-alt">
+                    <h3>2009</h3>
                 </div>
                 <div class="timeline-text">
-                    <h3>The PearBook 2 replaces the original PearBook, packed full with even more features than its predecessor.</h3>
+                    <h4>The PearBook 2 replaces the original PearBook, packed full with even more features than its predecessor.</h4>
                 </div>
             </div>
             <div class="timeline-content">
@@ -170,15 +177,15 @@
                     <h2>2010</h2>
                 </div>
                 <div class="timeline-text">
-                    <h3>Pear Inc. unveils its new logo, designed by Chan Wen Loong, alongside the PearBook 3.</h3>
+                    <h4>Pear Inc. unveils its new logo, designed by Chan Wen Loong, alongside the PearBook 3.</h4>
                 </div>
             </div>
             <div class="timeline-content-alt">
-                <div class="timeline-year">
-                    <h2>2011</h2>
+                <div class="timeline-year-alt">
+                    <h3>2011</h3>
                 </div>
                 <div class="timeline-text">
-                    <h3>The PearBook Pro reveal stunned the world with technology created to make a mark in professional industries like Hollywood.</h3>
+                    <h4>The PearBook Pro reveal stunned the world with technology created to make a mark in professional industries like Hollywood.</h4>
                 </div>
             </div>
         </div>
