@@ -28,7 +28,6 @@
             color: inherit;
         }
         h1 {
-            
             font-size: 18pt;
         }
         h2 {
