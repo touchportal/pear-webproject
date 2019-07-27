@@ -128,10 +128,10 @@
                 PostBackUrl="~/home.aspx"
             />
             <a href="home.aspx">Home</a>
-            <a href="#">Buy Now</a>
-            <a href="#">About</a>
-            <a href="#">Join Us</a>
-            <a href="#">Contact</a>
+            <a href="store.aspx">Buy Now</a>
+            <a href="about.aspx">About</a>
+            <a href="staff.aspx">Join Us</a>
+            <a href="contact.aspx">Contact</a>
             <asp:ImageButton
                 ID="navbuttonShop"
                 runat="server"
