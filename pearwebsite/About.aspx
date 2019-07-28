@@ -21,7 +21,7 @@
             cursor: default;
         }
         /* STYLE REPLACEMENTS */
-        h1, h2, h3, h4 {
+        h1, h2 {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -32,12 +32,6 @@
         }
         h2 {
             font-size: 32pt;
-        }
-        h3 {
-            font-size: 32pt;
-        }
-        h4 {
-            font-size: 18pt;
         }
         /* ABOUT CONTENT */
         .body-about {
@@ -55,7 +49,7 @@
             position: relative;
             z-index: 3;
             color: #ffffff;
-            background-color: #333333;
+            background-color: inherit;
         }
         .about-logo {
             box-sizing: border-box;
@@ -70,9 +64,8 @@
             margin: 3em 0 3em 235px;
             background-color: inherit;
             padding-bottom: 7em;
-            border-color: #666666;
             border-bottom: solid;
-            border-bottom-width: 3px;
+            border-bottom-width: 1px;
         }
         .about-content {
             box-sizing: border-box;
@@ -83,6 +76,39 @@
             text-align: justify;
             margin-bottom: 4em;
             color: #ffffff;
+        }
+        /* ENVIRONMENT CONTENT */
+        .body-env {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #64C846;
+            width: 100%;
+        }
+        .env {
+            margin: 0 auto;
+            padding: 3em 50px 4em 50px;
+            max-width: 700px;
+            position: relative;
+            z-index: 3;
+        }
+        .env-header {
+            margin-bottom: 3em;
+            padding: 1em 2em;
+            z-index: 2;
+            text-align: center;
+            color: #f1f1f1;
+            background-color: #333333;
+            box-shadow: 5px 5px 25px #000000;
+        }
+        .env-content {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 95%;
+            margin-left: 20px;
+            z-index: 1;
+            text-align: center;
+            color: #222222;
         }
         /* TIMELINE CONTENT */
         .body-timeline {
@@ -99,7 +125,7 @@
             position: relative;
             z-index: 3;
             color: #999999;
-            background-color: #f1f1f1;
+            background-color: inherit;
         }
         .timeline-content, .timeline-content-alt {
             box-sizing: border-box;
@@ -159,6 +185,16 @@
             </div>
         </div>
     </div>
+    <div class="body-env unselectable">
+        <div class="env">
+            <div class="env-header">
+                <h2>Truly innovative companies have a small carbon footprint.</h2>
+            </div>
+            <div class="env-content">
+                <h1>Our product's enclosures are made from 100% recycled aluminum, without compromising strength or finish. In so many ways, the most advanced products are the ones that make the least environmental impact.</h1>
+            </div>
+        </div>
+    </div>
     <div class="body-timeline unselectable">
         <div class="timeline">
             <div class="timeline-content">
@@ -166,15 +202,15 @@
                     <h2>2007</h2>
                 </div>
                 <div class="timeline-text">
-                    <h4>The company revealed the revolutionary PearBook 1, poised to take over the personal computer market.</h4>
+                    <h1>The company revealed the revolutionary PearBook 1, poised to take over the personal computer market.</h1>
                 </div>
             </div>
             <div class="timeline-content-alt">
                 <div class="timeline-year-alt">
-                    <h3>2009</h3>
+                    <h2>2009</h2>
                 </div>
                 <div class="timeline-text">
-                    <h4>The PearBook 2 replaces the original PearBook, packed full with even more features than its predecessor.</h4>
+                    <h1>The PearBook 2 replaces the original PearBook, packed full with even more features than its predecessor.</h1>
                 </div>
             </div>
             <div class="timeline-content">
@@ -182,15 +218,15 @@
                     <h2>2010</h2>
                 </div>
                 <div class="timeline-text">
-                    <h4>Pear Inc. unveils its new logo, designed by Chan Wen Loong, alongside the PearBook 3.</h4>
+                    <h1>Pear Inc. unveils its new logo, designed by Chan Wen Loong, alongside the PearBook 3.</h1>
                 </div>
             </div>
             <div class="timeline-content-alt">
                 <div class="timeline-year-alt">
-                    <h3>2011</h3>
+                    <h2>2011</h2>
                 </div>
                 <div class="timeline-text">
-                    <h4>The PearBook Pro reveal stunned the world with technology created to make a mark in professional industries like Hollywood.</h4>
+                    <h1>The PearBook Pro reveal stunned the world with technology created to make a mark in professional industries like Hollywood.</h1>
                 </div>
             </div>
         </div>
