@@ -21,7 +21,7 @@
             cursor: default;
         }
         /* STYLE REPLACEMENTS */
-        h1, h2, h3, h4, .txt-product {
+        h1, h2, h3, h4, h5, .txt-product {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -43,8 +43,38 @@
             text-align: center;
             font-size: 32pt;
         }
+        h5{
+            font-size: 12pt;
+            margin-left: 420px;
+            padding-bottom: 1em;
+        }
         .txt-product {
             font-size: 15pt;
+        }
+        /* SEARCHBAR */
+        .search {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: #333333;
+            width: 100%;
+        }
+        .search-content {
+            margin: 0 auto;
+            padding-top: 1em;
+            max-width: 800px;
+            position: relative;
+            color: #ffffff;
+            background-color: inherit;
+        }
+        .search-bar {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            position: fixed;
+            top: 75px;
+            margin-left: 590px;
+            padding-right: 1em;
         }
         /* BLOCK CONTENT */
         .body {
@@ -102,6 +132,12 @@
 <%-- BODY --%>
 <asp:Content ID="body" ContentPlaceHolderID="body" Runat="Server">
     <div class="body">
+        <div class="search">
+            <div class="search-content">
+                <h5>Find what you need:</h5>
+                <asp:TextBox ID="tbx_search" runat="server" text="Search" CssClass="search-bar"></asp:TextBox>
+            </div>
+        </div>
         <div class="content">
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">

@@ -98,6 +98,71 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        /* EVENT HEADER */
+        .body-eheader {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #64C846;
+            width: 100%;
+        }
+        .eheader {
+            margin: 0 auto;
+            padding: 2em 50px 2em 50px;
+            max-width: 700px;
+            position: relative;
+        }
+        .eheader-content {
+            padding: 1em 2em;
+            z-index: 2;
+            text-align: center;
+            color: #f1f1f1;
+            background-color: #333333;
+            box-shadow: 5px 5px 25px #222222;
+        }
+        /* EVENT CONTENT */
+        .body-event {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: #f1f1f1;
+            width: 100%;
+        }
+        .event {
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 700px;
+            position: relative;
+            z-index: 3;
+            color: #222222;
+            background-color: inherit;
+        }
+        .event-header {
+            box-sizing: border-box;
+            display: inline-block;
+            position: relative;
+            padding: 10px 30px;
+            width: 70%;
+            z-index: 2;
+            vertical-align: top;
+            text-align: center;
+            margin: 2em 0 2em 110px;
+            background-color: inherit;
+            padding-bottom: 2em;
+            border-bottom: solid;
+            border-bottom-width: 1px;
+        }
+        .event-content {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 90%;
+            margin-left: 40px;
+            z-index: 1;
+            text-align: center;
+            margin-bottom: 3em;
+            color: inherit;
+        }
     </style>
 </asp:Content>
 
@@ -126,6 +191,23 @@
                 <div class="promo-button">
                     <h4>BUY NOW</h4>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-eheader unselectable">
+        <div class="eheader">
+            <div class="eheader-content">
+                <h4>Current events</h4>
+            </div>
+        </div>
+    </div>
+    <div class="body-event unselectable">
+        <div class="event">
+            <div class="event-header">
+                <h4>PearCon 2019</h4>
+            </div>
+            <div class="event-content">
+                <h1>Pear Inc. is now selling tickets to PearCon 2019! Join other enthusiasts and industry specialists watch major companies unveil their upcoming products, including our own revolutionary PearBook 4.</h1>
             </div>
         </div>
     </div>

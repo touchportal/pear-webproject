@@ -21,7 +21,7 @@
             cursor: default;
         }
         /* STYLE REPLACEMENTS */
-        h1, h2 {
+        h1, h2, h3 {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -32,6 +32,12 @@
         }
         h2 {
             font-size: 32pt;
+        }
+        h3 {
+            font-weight: 100;
+            font-size: 18pt;
+            text-align: center;
+            margin-top: 50px;
         }
         /* ABOUT CONTENT */
         .body-about {
@@ -61,7 +67,7 @@
             z-index: 2;
             vertical-align: top;
             text-align: center;
-            margin: 3em 0 3em 235px;
+            margin: 3em 0 3em 215px;
             background-color: inherit;
             padding-bottom: 7em;
             border-bottom: solid;
@@ -90,7 +96,6 @@
             padding: 3em 50px 4em 50px;
             max-width: 700px;
             position: relative;
-            z-index: 3;
         }
         .env-header {
             margin-bottom: 3em;
@@ -182,6 +187,7 @@
             </div>
             <div class="about-content">
                 <h1>Pear Inc. is an imaginary company that is made up for an ASP.NET project for school. This is a parody mashup of the Pear Devices seen in iCarly and Apple's website.</h1>
+                <h3>&#x2B9F;</h3>
             </div>
         </div>
     </div>
