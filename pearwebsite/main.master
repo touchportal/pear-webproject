@@ -26,6 +26,9 @@
             user-select: none;
             cursor: default;
         }
+        .placeholder {
+            padding-top: 60px;
+        }
         /* BODY */
         body {
             font-family: cubano, sans-serif;
@@ -35,6 +38,13 @@
             width: 100%;
         }
         /* NAVIGATION BAR */
+        .body-navbar {
+            z-index: 100;
+            width: 100%;
+            position: fixed;
+            background-color: #ffffff;
+            box-shadow: 0 0 35px #000000;
+        }
         .navbar {
             margin: 0 auto;
             padding-left: 35px;
@@ -114,35 +124,37 @@
 <body>
     <form id="mainform" runat="server">
     <div class="unselectable">
-        <div class="navbar">
-            <asp:ImageButton
-                ID="navbuttonHome"
-                runat="server"
-                CssClass="navbuttonHome"
-                Height="24px"
-                Width="24px"
-                AlternateText="Pear Inc. Logo"
-                ImageAlign="middle"
-                ImageUrl="icons/pear-inc-logo.png"
-                OnClick="NavbuttonHome_Click"
-                PostBackUrl="~/home.aspx"
-            />
-            <a href="home.aspx">Home</a>
-            <a href="store.aspx">Buy Now</a>
-            <a href="about.aspx">About</a>
-            <a href="staff.aspx">Join Us</a>
-            <a href="contact.aspx">Contact</a>
-            <asp:ImageButton
-                ID="navbuttonShop"
-                runat="server"
-                CssClass="navbuttonShop"
-                Height="24px"
-                Width="24px"
-                AlternateText="Shopping Bag"
-                ImageAlign="middle"
-                ImageUrl="icons/shopping-bag-empty.png"
-                OnClick="NavbuttonShop_Click"
-            />
+        <div class="body-navbar">
+            <div class="navbar">
+                <asp:ImageButton
+                    ID="navbuttonHome"
+                    runat="server"
+                    CssClass="navbuttonHome"
+                    Height="24px"
+                    Width="24px"
+                    AlternateText="Pear Inc. Logo"
+                    ImageAlign="middle"
+                    ImageUrl="icons/pear-inc-logo.png"
+                    OnClick="NavbuttonHome_Click"
+                    PostBackUrl="~/home.aspx"
+                />
+                <a href="home.aspx">Home</a>
+                <a href="store.aspx">Buy Now</a>
+                <a href="about.aspx">About</a>
+                <a href="staff.aspx">Join Us</a>
+                <a href="contact.aspx">Contact</a>
+                <asp:ImageButton
+                    ID="navbuttonShop"
+                    runat="server"
+                    CssClass="navbuttonShop"
+                    Height="24px"
+                    Width="24px"
+                    AlternateText="Shopping Bag"
+                    ImageAlign="middle"
+                    ImageUrl="icons/shopping-bag-empty.png"
+                    OnClick="NavbuttonShop_Click"
+                />
+            </div>
         </div>
         <div class="placeholder">
             <!-- PLACEHOLDER -->
