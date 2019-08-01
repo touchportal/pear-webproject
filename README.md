@@ -19,7 +19,7 @@ This repository uses [Semantic Versioning](https://semver.org/) to keep track of
 - v1.6.0 -> Contains every change in v1.6.*
 - v1.6.1 -> Finishing about and contact page
 - v1.6.2 -> Adding join and staff page
-- v1.6.3 -> Adding extra hierarchical pages
+- v1.6.3 -> Adding extra hierarchical pages (environment.aspx)
 - v1.6.4 -> Implementing backend
 
 =====
