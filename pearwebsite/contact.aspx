@@ -41,6 +41,13 @@
             color: #f1f1f1;
             font-size: 21pt;
         }
+        .feedback-name-tbx, .feedback-email-tbx, .feedback-message-tbx {
+            font-family: roboto, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: inherit;
+            font-size: 16pt;
+        }
         /* HEADER */
         .body-header {
             font-family: cubano, sans-serif;
