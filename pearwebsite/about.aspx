@@ -88,7 +88,8 @@
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
-            background-color: #64C846;
+            background: #64C846 url(http://localhost:60359/content/environment.gif) no-repeat center;
+            background-size: 1920px 1080px;
             width: 100%;
         }
         .env {
@@ -113,7 +114,28 @@
             margin-left: 20px;
             z-index: 1;
             text-align: center;
-            color: #222222;
+            text-shadow: 3px 3px 5px #333333;
+            color: #f1f1f1;
+        }
+        .env-button {
+            margin-top: 2em;
+        }
+        .env-button a {
+            display: block;
+            width: 50%;
+            margin-left: 150px;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none;
+            padding: 1em 2em;
+            color: #ffffff;
+            background-color: #333333;
+            box-shadow: 5px 5px 10px #222222;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .env-button a:hover {
+            background-color: #666666;
         }
         /* TIMELINE CONTENT */
         .body-timeline {
@@ -198,6 +220,9 @@
             </div>
             <div class="env-content">
                 <h1>Our product's enclosures are made from 100% recycled aluminum, without compromising strength or finish. In so many ways, the most advanced products are the ones that make the least environmental impact.</h1>
+            </div>
+            <div class="env-button">
+                <a href="environment.aspx"><h2>Find out more!</h2></a>
             </div>
         </div>
     </div>
