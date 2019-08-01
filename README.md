@@ -12,3 +12,14 @@ This is a parody mashup of the [Pear Devices seen in iCarly](https://icarly.fand
 This repository uses [Semantic Versioning](https://semver.org/) to keep track of future updates.
 
 =====
+### Active Versions
+
+- master -> Contains every change in v1.*
+
+- v1.6.0 -> Contains every change in v1.6.*
+- v1.6.1 -> Finishing about and contact page
+- v1.6.2 -> Adding join and staff page
+- v1.6.3 -> Adding extra hierarchical pages
+- v1.6.4 -> Implementing backend
+
+=====
