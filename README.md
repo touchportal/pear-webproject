@@ -14,10 +14,12 @@ This repository uses [Semantic Versioning](https://semver.org/) to keep track of
 =====
 ### Active Versions
 
-master - Contains every change in v1.*
+- master -> Contains every change in v1.*
 
-v1.6.0 - Contains every change in v1.6.*
-v1.6.1 - Finishing about and contact page
-v1.6.2 - Adding join and staff page
+- v1.6.0 -> Contains every change in v1.6.*
+- v1.6.1 -> Finishing about and contact page
+- v1.6.2 -> Adding join and staff page
+- v1.6.3 -> Adding extra hierarchical pages (environment.aspx)
+- v1.6.4 -> Implementing backend
 
 =====
