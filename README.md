@@ -18,13 +18,13 @@ This repository uses [Semantic Versioning](https://semver.org/) to keep track of
 - master -> Contains every change in v1.*
 
 - v1.6.0 -> Contains every change in v1.6.*
-> ~~v1.6.1 -> Finishing about and contact page~~
-> v1.6.2 -> Adding join and staff page
-> v1.6.3 -> Adding login and logout pages
-> v1.6.4 -> Adding extra hierarchical pages (environment.aspx)
+..- ~~v1.6.1 -> Finishing about and contact page~~
+..- v1.6.2 -> Adding join and staff page
+..- v1.6.3 -> Adding login and logout pages
+..- v1.6.4 -> Adding extra hierarchical pages (environment.aspx)
 
 
 - v1.7.0 -> Contains every change in v1.7.*
-> v1.7.1 -> Implementing backend
+..- v1.7.1 -> Implementing backend
 
 ---
