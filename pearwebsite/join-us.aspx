@@ -105,21 +105,21 @@
             text-align: center;
             color: #222222;
         }
-        /* PAYROLL */
-        .body-benefits {
+        /* JOB OFFERS */
+        .body-joboffers {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
             background-color: #f1f1f1;
             width: 100%;
         }
-        .benefits {
+        .joboffers {
             margin: 0 auto;
             padding: 3em 50px 1em 50px;
             max-width: 700px;
             position: relative;
         }
-        .benefits-title {
+        .joboffers-title {
             margin-bottom: 1em;
             padding: 0 2em;
             z-index: 2;
@@ -127,7 +127,14 @@
             color: inherit;
             background-color: inherit;
         }
-        .benefits-content {
+        .joboffers-title a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .joboffers-title a:hover {
+            color: #666666;
+        }
+        .joboffers-content {
             box-sizing: border-box;
             display: inline-block;
             width: 95%;
@@ -174,14 +181,29 @@
     <div class="body-header unselectable">
         <div class="header">
             <div class="header-content">
-                <h1>Payroll</h1>
+                <h1>Now hiring!</h1>
             </div>
         </div>
     </div>
-    <div class="body-header unselectable">
-        <div class="header">
-            <div class="header-content">
-                <h1>Schedule</h1>
+    <div class="body-joboffers unselectable">
+        <div class="joboffers">
+            <div class="joboffers-title">
+                <a href="/hiring/webdeveloper.aspx"><h2>&#127760;<br />Web Developer</h2></a>
+            </div>
+            <div class="joboffers-content">
+                <h3>Our website needs more work and we don't have the people to do it!</h3>
+            </div>
+            <div class="joboffers-title">
+                <a href="/hiring/dataanalyst.aspx"><h2>&#128188;<br />Big Data Analyst</h2></a>
+            </div>
+            <div class="joboffers-content">
+                <h3>We pull in tons of important sales data from our site and we need someone capable to work on it!</h3>
+            </div>
+            <div class="joboffers-title">
+                <a href="/hiring/storemanager.aspx"><h2>&#127978;<br />Store Manager</h2></a>
+            </div>
+            <div class="joboffers-content">
+                <h3>As we open new stores worldwide, we would like passionate Pear users to work there!</h3>
             </div>
         </div>
     </div>
