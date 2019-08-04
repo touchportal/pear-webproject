@@ -136,100 +136,100 @@
             </div>
         </div>
         <div class="content">
-            <a href="store/pearphone5.aspx">
+            <a href="/store/pearphone5.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone5" src="/content/pearphone5.png" style="width: 75px; height: 125px; margin-top: 10px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product0" runat="server" Text="product0" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearphone6.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone6" src="/content/pearphone6.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product1" runat="server" Text="product1" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearphone6s.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone6S" src="/content/pearphone6s.png" style="width: 70px; height: 125px; margin-top: 10px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product2" runat="server" Text="product2" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearpadmini.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearPadMini" src="/content/pearpadmini.png" style="width: 90px; height: 125px; margin-top: 10px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product3" runat="server" Text="product3" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearpad2.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearPad2" src="/content/pearpad2.png" style="width: 100px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product4" runat="server" Text="product4" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearmac.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearMac" src="/content/pearmac.png" style="width: 125px; height: 100px; margin-top: 35px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product5" runat="server" Text="product5" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearpod.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearPod" src="/content/pearpod.png" style="width: 130px; height: 125px; margin-top: 10px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product6" runat="server" Text="product6" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearhome.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearHome" src="/content/pearhome.png" style="width: 100px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product7" runat="server" Text="product7" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/pearwatch.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearWatch" src="/content/pearwatch.png" style="width: 90px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product8" runat="server" Text="product8" CssClass="txt-product"></asp:Label>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
+            <a href="/store/peartv.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
+                        <img class="block-image" alt="PearTV" src="/content/peartv.png" style="width: 100px; height: 75px; margin-top: 60px;"/>
                         <div class="block-button">
                             <asp:Label ID="lbl_product9" runat="server" Text="product9" CssClass="txt-product"></asp:Label>
                         </div>

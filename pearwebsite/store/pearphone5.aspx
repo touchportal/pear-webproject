@@ -25,6 +25,12 @@
             font-style: normal;
             color: inherit;
         }
+        h5 {
+            font-family: roboto, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: inherit;
+        }
         h1 {
             font-size: 18pt;
         }
@@ -41,7 +47,11 @@
             text-align: center;
             font-size: 32pt;
         }
-        /* PROMOTIONAL CONTENT */
+        h5 {
+            font-size: 18pt;
+            color: #333333;
+        }
+        /* PRODUCT */
         .body {
             font-family: cubano, sans-serif;
             font-weight: 400;
@@ -49,7 +59,7 @@
             background: #333333;
             width: 100%;
         }
-        .promo {
+        .product {
             margin: 0 auto;
             padding-left: 50px;
             padding-right: 50px;
@@ -59,7 +69,7 @@
             color: #ffffff;
             background-color: #333333;
         }
-        .promo-content-left {
+        .product-content-left {
             box-sizing: border-box;
             display: inline-block;
             position: relative;
@@ -71,7 +81,7 @@
             margin: 3em 0 3em 5em;
             background-color: inherit;
         }
-        .promo-content-right {
+        .product-content-right {
             box-sizing: border-box;
             display: inline-block;
             position: relative;
@@ -84,26 +94,27 @@
             color: #f1f1f1;
             background-color: inherit;
         }
-        .promo-button {
+        .product-button {
             margin-left: 0;
             margin-top: 2em;
             height: 55px;
             width: 270px;
             background-color: #64C846;
         }
-        .promo-button:hover {
+        .product-button:hover {
             text-decoration: underline;
             cursor: pointer;
         }
-        /* EVENT CONTENT */
-        .body-event {
+        /* DESCRIPTION */
+        .body-description {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
-            background: #f1f1f1;
+            background: #f1f1f1 url(http://localhost:60359/content/email-pattern.png) repeat center;
+            background-attachment: fixed;
             width: 100%;
         }
-        .event {
+        .description {
             margin: 0 auto;
             padding-left: 50px;
             padding-right: 50px;
@@ -111,32 +122,15 @@
             position: relative;
             z-index: 3;
             color: #222222;
-            background-color: inherit;
+            text-shadow: 1px 1px 2px #999999;
         }
-        .event-header {
-            box-sizing: border-box;
-            display: inline-block;
-            position: relative;
-            padding: 10px 30px;
-            width: 70%;
-            z-index: 2;
-            vertical-align: top;
-            text-align: center;
-            margin: 2em 0 2em 110px;
-            background-color: inherit;
-            padding-bottom: 2em;
-            border-bottom: solid;
-            border-bottom-width: 1px;
-        }
-        .event-content {
+        .description-content {
             box-sizing: border-box;
             display: inline-block;
             width: 90%;
-            margin-left: 40px;
+            margin: 3em 0 3em 40px;
             z-index: 1;
             text-align: center;
-            margin-bottom: 3em;
-            color: inherit;
         }
     </style>
 </asp:Content>
@@ -144,35 +138,35 @@
 <%-- BODY --%>
 <asp:Content ID="body" ContentPlaceHolderID="body" Runat="Server">
     <div class="body unselectable">
-        <div class="promo">
-            <div class="promo-content-left">
-                <div class="promo-image">
+        <div class="product">
+            <div class="product-content-left">
+                <div class="product-image">
                     <asp:Image
-                        ID="promo"
+                        ID="product"
                         runat="server"
-                        CssClass="promo-image"
+                        CssClass="product-image"
                         Height="270px"
                         Width="150px"
-                        AlternateText="PearPhone"
+                        AlternateText="PearPhone5"
                         ImageAlign="middle"
                         ImageUrl="/content/pearphone5.png"
                         />
                 </div>
             </div>
-            <div class="promo-content-right">
+            <div class="product-content-right">
                 <h1>THE</h1>
                 <h2>PEARPHONE 5</h2>
                 <h3>$1080</h3>
-                <div class="promo-button">
+                <div class="product-button">
                     <h4>BUY NOW</h4>
                 </div>
             </div>
         </div>
     </div>
-    <div class="body-event unselectable">
-        <div class="event">
-            <div class="event-content">
-                <h1>The PearPhone 5 featured major design changes in comparison to its predecessor. These included an aluminum-based body which was thinner and lighter than previous models, a taller screen with a nearly 16:9 aspect ratio, the Pear P6 system-on-chip, LTE support, and Lightning, a new compact dock connector which replaced the 30-pin design used by previous PearPhone models. This was the second Pear phone to include its new Sony-made 8 MP camera, which was first introduced on the PearPhone 4S.</h1>
+    <div class="body-description unselectable">
+        <div class="description">
+            <div class="description-content">
+                <h5>The PearPhone 5 featured major design changes in comparison to its predecessor. These included an aluminum-based body which was thinner and lighter than previous models, a taller screen with a nearly 16:9 aspect ratio, and Lightning, a new compact dock connector which replaced the 30-pin design used by previous PearPhone models. This was the second Pear phone to include its new 8 MP camera, which was first introduced on the PearPhone 4.</h5>
             </div>
         </div>
     </div>
