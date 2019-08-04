@@ -13,10 +13,8 @@
         .unselectable {
             -webkit-touch-callout: none;
             -webkit-user-select: none;
-            -khtml-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
-            -o-user-select: none;
             user-select: none;
             cursor: default;
         }
@@ -208,6 +206,14 @@
             </div>
             <div class="event-content">
                 <h1>Pear Inc. is now selling tickets to PearCon 2019! Join other enthusiasts and industry specialists watch major companies unveil their upcoming products, including our own revolutionary PearBook 4.</h1>
+            </div>
+        </div>
+        <div class="event">
+            <div class="event-header">
+                <h4>PearCon 2018</h4>
+            </div>
+            <div class="event-content">
+                <h1>PearCon 2018 is being hosted at our very own office at Pear Inc! Tour our offices freely before we get settled in and begin work on a new lineup of devices that will be announced at the event.</h1>
             </div>
         </div>
     </div>

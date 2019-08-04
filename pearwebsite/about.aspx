@@ -13,10 +13,8 @@
         .unselectable {
             -webkit-touch-callout: none;
             -webkit-user-select: none;
-            -khtml-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
-            -o-user-select: none;
             user-select: none;
             cursor: default;
         }
@@ -89,6 +87,7 @@
             font-weight: 400;
             font-style: normal;
             background: #64C846 url(http://localhost:60359/content/environment.gif) no-repeat center;
+            background-attachment: fixed;
             background-size: 1920px 1080px;
             width: 100%;
         }
@@ -100,12 +99,12 @@
         }
         .env-header {
             margin-bottom: 3em;
-            padding: 1em 2em;
+            width: 100%;
+            margin: 2em 0 3em 0;
             z-index: 2;
             text-align: center;
             color: #f1f1f1;
-            background-color: #333333;
-            box-shadow: 5px 5px 25px #000000;
+            text-shadow: 3px 3px 5px #333333;
         }
         .env-content {
             box-sizing: border-box;
@@ -118,24 +117,25 @@
             color: #f1f1f1;
         }
         .env-button {
-            margin-top: 2em;
+            margin-top: 3em;
+            margin-bottom: 1em;
         }
         .env-button a {
             display: block;
-            width: 50%;
-            margin-left: 150px;
+            width: 250px;
+            height: 100%;
+            margin-left: 210px;
             text-align: center;
-            vertical-align: middle;
             text-decoration: none;
-            padding: 1em 2em;
+            padding: 5px 1em;
             color: #ffffff;
-            background-color: #333333;
+            background-color: #222222;
             box-shadow: 5px 5px 10px #222222;
             border-radius: 50px;
             cursor: pointer;
         }
         .env-button a:hover {
-            background-color: #666666;
+            background-color: #333333;
         }
         /* TIMELINE CONTENT */
         .body-timeline {
@@ -222,7 +222,7 @@
                 <h1>Our product's enclosures are made from 100% recycled aluminum, without compromising strength or finish. In so many ways, the most advanced products are the ones that make the least environmental impact.</h1>
             </div>
             <div class="env-button">
-                <a href="environment.aspx"><h2>Find out more!</h2></a>
+                <a href="/about/environment.aspx"><h1>Find out more!</h1></a>
             </div>
         </div>
     </div>
@@ -263,4 +263,3 @@
         </div>
     </div>
 </asp:Content>
-
