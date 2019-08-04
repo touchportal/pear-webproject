@@ -92,6 +92,7 @@
         }
         .content a {
             text-decoration: none;
+            cursor: default;
         }
         .block {
             box-sizing: border-box;
@@ -138,7 +139,7 @@
             <a href="store/pearphone5.aspx">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product0" runat="server" Text="product0" CssClass="txt-product"></asp:Label>
                         </div>
@@ -148,7 +149,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product1" runat="server" Text="product1" CssClass="txt-product"></asp:Label>
                         </div>
@@ -158,7 +159,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product2" runat="server" Text="product2" CssClass="txt-product"></asp:Label>
                         </div>
@@ -168,7 +169,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product3" runat="server" Text="product3" CssClass="txt-product"></asp:Label>
                         </div>
@@ -178,7 +179,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product4" runat="server" Text="product4" CssClass="txt-product"></asp:Label>
                         </div>
@@ -188,7 +189,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product5" runat="server" Text="product5" CssClass="txt-product"></asp:Label>
                         </div>
@@ -198,7 +199,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product6" runat="server" Text="product6" CssClass="txt-product"></asp:Label>
                         </div>
@@ -208,7 +209,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product7" runat="server" Text="product7" CssClass="txt-product"></asp:Label>
                         </div>
@@ -218,7 +219,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product8" runat="server" Text="product8" CssClass="txt-product"></asp:Label>
                         </div>
@@ -228,7 +229,7 @@
             <a href="https://www.apple.com/shop/buy-iphone/iphone-7">
                 <div class="block">
                     <div class="block-content">
-                        <img class="block-image" alt="PearPhone" src="content/pearphone.png" />
+                        <img class="block-image" alt="PearPhone" src="/content/pearphone.png" />
                         <div class="block-button">
                             <asp:Label ID="lbl_product9" runat="server" Text="product9" CssClass="txt-product"></asp:Label>
                         </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearphone5.aspx.cs" Inherits="store_pearphone5" %>
 
 <%-- HEAD --%>
 <asp:Content ID="head" ContentPlaceHolderID="head" Runat="Server">
@@ -91,35 +91,9 @@
             width: 270px;
             background-color: #64C846;
         }
-        .promo-button a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .promo-button a:hover {
+        .promo-button:hover {
             text-decoration: underline;
             cursor: pointer;
-        }
-        /* EVENT HEADER */
-        .body-eheader {
-            font-family: cubano, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            background-color: #64C846;
-            width: 100%;
-        }
-        .eheader {
-            margin: 0 auto;
-            padding: 2em 50px 2em 50px;
-            max-width: 700px;
-            position: relative;
-        }
-        .eheader-content {
-            padding: 1em 2em;
-            z-index: 2;
-            text-align: center;
-            color: #f1f1f1;
-            background-color: #333333;
-            box-shadow: 5px 5px 25px #222222;
         }
         /* EVENT CONTENT */
         .body-event {
@@ -178,45 +152,27 @@
                         runat="server"
                         CssClass="promo-image"
                         Height="270px"
-                        Width="130px"
+                        Width="150px"
                         AlternateText="PearPhone"
                         ImageAlign="middle"
-                        ImageUrl="/content/pearphone6.png"
+                        ImageUrl="/content/pearphone5.png"
                         />
                 </div>
             </div>
             <div class="promo-content-right">
                 <h1>THE</h1>
-                <h2>PEARPHONE 6</h2>
+                <h2>PEARPHONE 5</h2>
                 <h3>$1080</h3>
                 <div class="promo-button">
-                    <a href="/store/pearphone6.aspx"><h4>BUY NOW</h4></a>
+                    <h4>BUY NOW</h4>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="body-eheader unselectable">
-        <div class="eheader">
-            <div class="eheader-content">
-                <h4>Current events</h4>
             </div>
         </div>
     </div>
     <div class="body-event unselectable">
         <div class="event">
-            <div class="event-header">
-                <h4>PearCon 2019</h4>
-            </div>
             <div class="event-content">
-                <h1>Pear Inc. is now selling tickets to PearCon 2019! Join other enthusiasts and industry specialists watch major companies unveil their upcoming products, including our own revolutionary PearBook 4.</h1>
-            </div>
-        </div>
-        <div class="event">
-            <div class="event-header">
-                <h4>PearCon 2018</h4>
-            </div>
-            <div class="event-content">
-                <h1>PearCon 2018 is being hosted at our very own office at Pear Inc! Tour our offices freely before we get settled in and begin work on a new lineup of devices that will be announced at the event.</h1>
+                <h1>The PearPhone 5 featured major design changes in comparison to its predecessor. These included an aluminum-based body which was thinner and lighter than previous models, a taller screen with a nearly 16:9 aspect ratio, the Pear P6 system-on-chip, LTE support, and Lightning, a new compact dock connector which replaced the 30-pin design used by previous PearPhone models. This was the second Pear phone to include its new Sony-made 8 MP camera, which was first introduced on the PearPhone 4S.</h1>
             </div>
         </div>
     </div>
