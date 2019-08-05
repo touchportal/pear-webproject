@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearphone5.aspx.cs" Inherits="store_pearphone5" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearhome.aspx.cs" Inherits="store_pearhome" %>
 
 <%-- HEAD --%>
 <asp:Content ID="head" ContentPlaceHolderID="head" Runat="Server">
@@ -170,18 +170,19 @@
                         ID="product"
                         runat="server"
                         CssClass="product-image"
-                        Height="270px"
+                        Style="margin-top: 20px;"
+                        Height="220px"
                         Width="150px"
-                        AlternateText="PearPhone5"
+                        AlternateText="PearHome"
                         ImageAlign="middle"
-                        ImageUrl="/content/pearphone5.png"
+                        ImageUrl="/content/pearhome.png"
                         />
                 </div>
             </div>
             <div class="product-content-right">
                 <h1>THE</h1>
-                <h2>PEARPHONE 5</h2>
-                <h3>$1080</h3>
+                <h2>PEARHOME</h2>
+                <h3>$359</h3>
                 <div class="product-button">
                     <h4>BUY NOW</h4>
                 </div>
@@ -192,12 +193,6 @@
         <div class="included">
             <div class="included-content">
                 <h4>This product comes with</h4>
-                <asp:Image
-                    ID="earpiece"
-                    runat="server"
-                    ImageUrl="/content/earpiece.png"
-                    Style="margin-top: 40px; width: 210px; height: 160px; margin-left: 3em;"
-                />
                 <asp:Image
                     ID="cable"
                     runat="server"
@@ -210,7 +205,7 @@
     <div class="body-description unselectable">
         <div class="description">
             <div class="description-content">
-                <h5>The PearPhone 5 featured major design changes in comparison to its predecessor. These included an aluminum-based body which was thinner and lighter than previous models, a taller screen with a nearly 16:9 aspect ratio, and Lightning, a new compact dock connector which replaced the 30-pin design used by previous PearPhone models. This was the second Pear phone to include its new 8 MP camera, which was first introduced on the PearPhone 4.</h5>
+                <h5>The PearHome has a rounded, cylindrical shape, and has a small touchscreen on its top. It has seven tweeters in its base and a four-inch woofer towards the top, as well as six microphones used for voice control and acoustic optimization. The processor featured in the HomePod is an Pear P8 system-on-chip, previously featured in some of Pear's phones and tablet computers such as the PearPhone 6 and PearPad Mini.</h5>
             </div>
         </div>
     </div>
