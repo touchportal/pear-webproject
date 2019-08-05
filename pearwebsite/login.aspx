@@ -110,7 +110,7 @@
         .login-email-tbx, .login-password-tbx {
             width: 90%;
             height: 50px;
-            font-size: 20pt;
+            font-size: 10pt;
             box-shadow: 5px 5px 10px #333333;
         }
         .login-submit {
@@ -159,7 +159,8 @@
                 <asp:TextBox ID="tbx_login_password" runat="server" CssClass="login-password-tbx"></asp:TextBox>
             </div>
             <div class="login-submit">
-                <asp:Button ID="btn_login_submit" runat="server" CssClass="login-button" Text="Login" OnClick="btn_login_submit_Click" />
+                <asp:Button ID="btn_login_submit" runat="server" CssClass="login-button" Text="Login as member" OnClick="btn_login_submit_Click" />
+                <asp:Button ID="btn_login2_submit" runat="server" CssClass="login-button" Text="Login as admin" OnClick="btn_login2_submit_Click" />
                 <asp:Button ID="btn_register_submit" runat="server" CssClass="login-button" Text="Register" />
             </div>
         </div>

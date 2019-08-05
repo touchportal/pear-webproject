@@ -19,6 +19,10 @@ public partial class login : System.Web.UI.Page
         {
             Response.Redirect("cart.aspx");
         }
+        else if (Session["valid"].ToString() == "admin")
+        {
+            Response.Redirect("cart.aspx");
+        }
         else
         {
             Session["message"] = "Unidentified user, Refreshing page";
@@ -30,7 +34,7 @@ public partial class login : System.Web.UI.Page
     protected void btn_login_submit_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection("Server = THEDUCKZ\\SQLEXPRESS; Database = Pear; Integrated Security = SSPI");
-        SqlCommand cmd = new SqlCommand("SELECT * from userinfo WHERE email ='" + tbx_login_email.Text.Trim() + "' AND password ='" + tbx_login_password.Text.Trim() + "'",conn);
+        SqlCommand cmd = new SqlCommand("SELECT * from userid WHERE email ='" + tbx_login_email.Text.Trim() + "' AND password ='" + tbx_login_password.Text.Trim() + "'",conn);
 
         SqlDataReader dr;
         conn.Open();
@@ -50,4 +54,27 @@ public partial class login : System.Web.UI.Page
         conn.Close();
     }
 
+
+    protected void btn_login2_submit_Click(object sender, EventArgs e)
+    {
+        SqlConnection conn = new SqlConnection("Server = THEDUCKZ\\SQLEXPRESS; Database = Pear; Integrated Security = SSPI");
+        SqlCommand cmd = new SqlCommand("SELECT * from admin WHERE email ='" + tbx_login_email.Text.Trim() + "' AND password ='" + tbx_login_password.Text.Trim() + "'", conn);
+
+        SqlDataReader dr;
+        conn.Open();
+        dr = cmd.ExecuteReader();
+
+        if (dr.Read())
+        {
+            Session["valid"] = "admin";
+            Response.Redirect("home.aspx");
+        }
+        else
+        {
+            Response.Redirect("Login.aspx");
+        }
+
+        dr.Close();
+        conn.Close();
+    }
 }

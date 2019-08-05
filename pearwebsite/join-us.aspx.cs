@@ -17,6 +17,10 @@ public partial class join_us : System.Web.UI.Page
         {
             Response.Redirect("staff.aspx");
         }
+        else if (Session["valid"].ToString() == "admin")
+        {
+            Response.Redirect("admin.aspx");
+        }
         else
         {
             Session["message"] = "Unidentified user, Refreshing page";
