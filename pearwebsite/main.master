@@ -139,10 +139,10 @@
                     OnClick="NavbuttonHome_Click"
                     PostBackUrl="~/home.aspx"
                 />
-                <a href="/home.aspx">Home</a>
-                <a href="/store.aspx">Buy Now</a>
+                <a href="/home.aspx" OnClick="Home_Click">Home</a>
+                <a href="/store.aspx" OnClick="Store_Click">Buy Now</a>
                 <a href="/about.aspx">About</a>
-                <a href="/join-us.aspx">Join Us</a>
+                <a href="/join-us.aspx" OnClick="Joinus_Click">Join Us</a>
                 <a href="/contact.aspx">Contact</a>
                 <asp:ImageButton
                     ID="navbuttonShop"
