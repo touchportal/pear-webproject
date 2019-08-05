@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class main : System.Web.UI.MasterPage
+public partial class login : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -14,11 +14,6 @@ public partial class main : System.Web.UI.MasterPage
 
     protected void NavbuttonHome_Click(object sender, ImageClickEventArgs e)
     {
-                                                                          
-    }
 
-    protected void NavbuttonShop_Click(object sender, ImageClickEventArgs e)
-    {
-        
     }
 }

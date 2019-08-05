@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearphone5.aspx.cs" Inherits="store_pearphone5" %>
 
 <%-- HEAD --%>
 <asp:Content ID="head" ContentPlaceHolderID="head" Runat="Server">
@@ -25,6 +25,12 @@
             font-style: normal;
             color: inherit;
         }
+        h5 {
+            font-family: roboto, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: inherit;
+        }
         h1 {
             font-size: 18pt;
         }
@@ -41,7 +47,11 @@
             text-align: center;
             font-size: 32pt;
         }
-        /* PROMOTIONAL CONTENT */
+        h5 {
+            font-size: 18pt;
+            color: #333333;
+        }
+        /* PRODUCT */
         .body {
             font-family: cubano, sans-serif;
             font-weight: 400;
@@ -49,7 +59,7 @@
             background: #333333;
             width: 100%;
         }
-        .promo {
+        .product {
             margin: 0 auto;
             padding-left: 50px;
             padding-right: 50px;
@@ -59,7 +69,7 @@
             color: #ffffff;
             background-color: #333333;
         }
-        .promo-content-left {
+        .product-content-left {
             box-sizing: border-box;
             display: inline-block;
             position: relative;
@@ -71,7 +81,7 @@
             margin: 3em 0 3em 5em;
             background-color: inherit;
         }
-        .promo-content-right {
+        .product-content-right {
             box-sizing: border-box;
             display: inline-block;
             position: relative;
@@ -84,52 +94,27 @@
             color: #f1f1f1;
             background-color: inherit;
         }
-        .promo-button {
+        .product-button {
             margin-left: 0;
             margin-top: 2em;
             height: 55px;
             width: 270px;
             background-color: #64C846;
         }
-        .promo-button a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .promo-button a:hover {
+        .product-button:hover {
             text-decoration: underline;
             cursor: pointer;
         }
-        /* EVENT HEADER */
-        .body-eheader {
+        /* DESCRIPTION */
+        .body-description {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
-            background-color: #64C846;
+            background: #f1f1f1 url(http://localhost:60359/content/email-pattern.png) repeat center;
+            background-attachment: fixed;
             width: 100%;
         }
-        .eheader {
-            margin: 0 auto;
-            padding: 2em 50px 2em 50px;
-            max-width: 700px;
-            position: relative;
-        }
-        .eheader-content {
-            padding: 1em 2em;
-            z-index: 2;
-            text-align: center;
-            color: #f1f1f1;
-            background-color: #333333;
-            box-shadow: 5px 5px 25px #222222;
-        }
-        /* EVENT CONTENT */
-        .body-event {
-            font-family: cubano, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            background: #f1f1f1;
-            width: 100%;
-        }
-        .event {
+        .description {
             margin: 0 auto;
             padding-left: 50px;
             padding-right: 50px;
@@ -137,32 +122,15 @@
             position: relative;
             z-index: 3;
             color: #222222;
-            background-color: inherit;
+            text-shadow: 1px 1px 2px #999999;
         }
-        .event-header {
-            box-sizing: border-box;
-            display: inline-block;
-            position: relative;
-            padding: 10px 30px;
-            width: 70%;
-            z-index: 2;
-            vertical-align: top;
-            text-align: center;
-            margin: 2em 0 2em 110px;
-            background-color: inherit;
-            padding-bottom: 2em;
-            border-bottom: solid;
-            border-bottom-width: 1px;
-        }
-        .event-content {
+        .description-content {
             box-sizing: border-box;
             display: inline-block;
             width: 90%;
-            margin-left: 40px;
+            margin: 3em 0 3em 40px;
             z-index: 1;
             text-align: center;
-            margin-bottom: 3em;
-            color: inherit;
         }
     </style>
 </asp:Content>
@@ -170,53 +138,35 @@
 <%-- BODY --%>
 <asp:Content ID="body" ContentPlaceHolderID="body" Runat="Server">
     <div class="body unselectable">
-        <div class="promo">
-            <div class="promo-content-left">
-                <div class="promo-image">
+        <div class="product">
+            <div class="product-content-left">
+                <div class="product-image">
                     <asp:Image
-                        ID="promo"
+                        ID="product"
                         runat="server"
-                        CssClass="promo-image"
+                        CssClass="product-image"
                         Height="270px"
-                        Width="130px"
-                        AlternateText="PearPhone"
+                        Width="150px"
+                        AlternateText="PearPhone5"
                         ImageAlign="middle"
-                        ImageUrl="/content/pearphone6.png"
+                        ImageUrl="/content/pearphone5.png"
                         />
                 </div>
             </div>
-            <div class="promo-content-right">
+            <div class="product-content-right">
                 <h1>THE</h1>
-                <h2>PEARPHONE 6</h2>
+                <h2>PEARPHONE 5</h2>
                 <h3>$1080</h3>
-                <div class="promo-button">
-                    <a href="/store/pearphone6.aspx"><h4>BUY NOW</h4></a>
+                <div class="product-button">
+                    <h4>BUY NOW</h4>
                 </div>
             </div>
         </div>
     </div>
-    <div class="body-eheader unselectable">
-        <div class="eheader">
-            <div class="eheader-content">
-                <h4>Current events</h4>
-            </div>
-        </div>
-    </div>
-    <div class="body-event unselectable">
-        <div class="event">
-            <div class="event-header">
-                <h4>PearCon 2019</h4>
-            </div>
-            <div class="event-content">
-                <h1>Pear Inc. is now selling tickets to PearCon 2019! Join other enthusiasts and industry specialists watch major companies unveil their upcoming products, including our own revolutionary PearBook 4.</h1>
-            </div>
-        </div>
-        <div class="event">
-            <div class="event-header">
-                <h4>PearCon 2018</h4>
-            </div>
-            <div class="event-content">
-                <h1>PearCon 2018 is being hosted at our very own office at Pear Inc! Tour our offices freely before we get settled in and begin work on a new lineup of devices that will be announced at the event.</h1>
+    <div class="body-description unselectable">
+        <div class="description">
+            <div class="description-content">
+                <h5>The PearPhone 5 featured major design changes in comparison to its predecessor. These included an aluminum-based body which was thinner and lighter than previous models, a taller screen with a nearly 16:9 aspect ratio, and Lightning, a new compact dock connector which replaced the 30-pin design used by previous PearPhone models. This was the second Pear phone to include its new 8 MP camera, which was first introduced on the PearPhone 4.</h5>
             </div>
         </div>
     </div>

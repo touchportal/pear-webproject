@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="login.master.cs" Inherits="login" %>
 
 <!DOCTYPE html>
 <html>
@@ -47,68 +47,17 @@
             margin: 0 auto;
             padding-left: 35px;
             max-width: 800px;
+            height: 60px;
             position: relative;
             z-index: 2;
             color: #000000;
             background-color: #ffffff;
         }
-        .navbar a {
-            box-sizing: border-box;
-            display: inline-block;
-            position: relative;
-            height: 60px;
-            width: 130px;
-            z-index: 1;
-            vertical-align: top;
-            text-align: center;
-            padding-top: 16px;
-            text-decoration: none;
-            color: #999999;
-            background-color: #ffffff;
-            font-family: cubano, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 16pt;
-        }
-        .navbar a:hover {
-            background-color: #f1f1f1;
-            color: #666666;
-        }
         .navbuttonHome {
             margin-top: 10px;
+            margin-left: 343px;
             padding: 7px;
             cursor: pointer;
-        }
-        .navbuttonShop {
-            margin-top: 10px;
-            margin-left: 10px;
-            padding: 7px;
-            cursor: pointer;
-        }
-        .navbar-error {
-            display: none;
-        }
-        /* ALTERNATE NAVIGATION BAR */
-        @media screen and (max-width: 900px) {
-            .body-navbar {
-                width: 100%;
-                height: 100%;
-            }
-            .navbar {
-                display: none;
-            }
-            .navbar a {
-                display: none;
-            }
-            .navbar * {
-                display: none;
-            }
-            .navbar-error {
-                display: inline-block;
-                padding: 1em;
-                text-align: center;
-                color: #000000;
-            }
         }
         /* FOOTER */
         .footer {
@@ -132,33 +81,13 @@
                     runat="server"
                     CssClass="navbuttonHome"
                     Height="24px"
-                    Width="24px"
+                    Width="64px"
                     AlternateText="Pear Inc. Logo"
                     ImageAlign="middle"
-                    ImageUrl="icons/pear-inc-logo.png"
+                    ImageUrl="icons/pear-inc-textlogo.png"
                     OnClick="NavbuttonHome_Click"
                     PostBackUrl="~/home.aspx"
                 />
-                <a href="/home.aspx">Home</a>
-                <a href="/store.aspx">Buy Now</a>
-                <a href="/about.aspx">About</a>
-                <a href="/join-us.aspx">Join Us</a>
-                <a href="/contact.aspx">Contact</a>
-                <asp:ImageButton
-                    ID="navbuttonShop"
-                    runat="server"
-                    CssClass="navbuttonShop"
-                    Height="24px"
-                    Width="24px"
-                    AlternateText="Shopping Bag"
-                    ImageAlign="middle"
-                    ImageUrl="icons/shopping-bag-empty.png"
-                    OnClick="NavbuttonShop_Click"
-                    PostBackUrl="~/login.aspx"
-                />
-            </div>
-            <div class="navbar-error">
-                <span>The website does not support browsers with this width.</span>
             </div>
         </div>
         <div class="placeholder">
