@@ -18,9 +18,20 @@
             user-select: none;
             cursor: default;
         }
+        .body a {
+            text-decoration: none;
+            color: #333333;
+            cursor: pointer;
+        }
         /* STYLE REPLACEMENTS */
-        h1, h2, h3, h4 {
+        h1, h2, h4 {
             font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: inherit;
+        }
+        h3 {
+            font-family: roboto, sans-serif;
             font-weight: 400;
             font-style: normal;
             color: inherit;
@@ -29,105 +40,108 @@
             font-size: 18pt;
         }
         h2 {
-            margin-left: 14pt;
-            font-size: 30pt;
+            font-size: 28pt;
+            text-align: center;
+            margin-top: 5px;
         }
         h3 {
-            margin-left: 105pt;
-            margin-top: 7pt;
-            font-size: 35pt;
+            font-size: 21pt;
+            text-align: center;
+            margin-top: 7px;
         }
         h4 {
+            font-size: 35pt;
             text-align: center;
-            font-size: 32pt;
+            color: #333333;
         }
-        /* PROMOTIONAL CONTENT */
-        .body {
-            font-family: cubano, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            background: #333333;
+        h5 {
+            font-size: 21pt;
+            text-align: center;
+            margin-top: 1em;
+        }
+        h6 {
+            font-size: 50pt;
+            text-align: center;
+            text-shadow: 3px 3px 5px #333333;
+            color: #f1f1f1;
+        }
+        /* P1 CONTENT */
+        .body-p1 {
+            background: #f1f1f1 url(http://localhost:60359/content/pearpod-ad.png) no-repeat bottom;
+            background-size: 600px 350px;
             width: 100%;
+            height: 550px;
+            margin-bottom: 7px;
         }
-        .promo {
+        .p1 {
             margin: 0 auto;
             padding-left: 50px;
             padding-right: 50px;
             max-width: 700px;
             position: relative;
             z-index: 3;
-            color: #ffffff;
-            background-color: #333333;
         }
-        .promo-content-left {
+        .p1-content {
             box-sizing: border-box;
             display: inline-block;
-            position: relative;
-            height: 270px;
-            width: 150px;
+            width: 95%;
+            margin-left: 20px;
             z-index: 2;
-            vertical-align: top;
-            text-align: center;
-            margin: 3em 0 3em 5em;
-            background-color: inherit;
+            margin: 3em 0;
         }
-        .promo-content-right {
-            box-sizing: border-box;
-            display: inline-block;
-            position: relative;
-            height: 270px;
-            z-index: 1;
-            vertical-align: top;
-            text-align: left;
-            margin: 4em 0 0 5em;
-            text-decoration: none;
-            color: #f1f1f1;
-            background-color: inherit;
-        }
-        .promo-button {
-            margin-left: 0;
-            margin-top: 2em;
-            height: 55px;
-            width: 270px;
-            background-color: #64C846;
-        }
-        .promo-button a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .promo-button a:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        /* EVENT HEADER */
-        .body-eheader {
-            font-family: cubano, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            background-color: #64C846;
+        /* P2 CONTENT */
+        .body-p2 {
+            background: #f1f1f1 url(http://localhost:60359/content/pearhome-ad.png) no-repeat bottom;
+            background-size: 550px 320px;
             width: 100%;
+            height: 550px;
+            margin-bottom: 7px;
         }
-        .eheader {
+        .p2 {
             margin: 0 auto;
-            padding: 2em 50px 2em 50px;
+            padding-left: 50px;
+            padding-right: 50px;
             max-width: 700px;
             position: relative;
+            z-index: 3;
         }
-        .eheader-content {
-            padding: 1em 2em;
+        .p2-content {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 95%;
+            margin-left: 20px;
             z-index: 2;
-            text-align: center;
-            color: #f1f1f1;
-            background-color: #333333;
-            box-shadow: 5px 5px 25px #222222;
+            margin: 3em 0;
+        }
+        /* EVENT HEADER */
+        .body-eventheader {
+            background: #333333 url(http://localhost:60359/content/eventheader.jpg) no-repeat top;
+            width: 100%;
+        }
+        .eventheader {
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 700px;
+            position: relative;
+            z-index: 3;
+        }
+        .eventheader-content {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 95%;
+            margin-left: 20px;
+            z-index: 2;
+            margin: 3em 0;
         }
         /* EVENT CONTENT */
         .body-event {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
-            background: #f1f1f1;
+            background: #ffffff;
             width: 100%;
+            margin-bottom: 7px;
         }
         .event {
             margin: 0 auto;
@@ -170,35 +184,33 @@
 <%-- BODY --%>
 <asp:Content ID="body" ContentPlaceHolderID="body" Runat="Server">
     <div class="body unselectable">
-        <div class="promo">
-            <div class="promo-content-left">
-                <div class="promo-image">
-                    <asp:Image
-                        ID="promo"
-                        runat="server"
-                        CssClass="promo-image"
-                        Height="270px"
-                        Width="130px"
-                        AlternateText="PearPhone"
-                        ImageAlign="middle"
-                        ImageUrl="/content/pearphone6.png"
-                        />
+        <a href="/store/pearpod.aspx">
+            <div class="body-p1">
+                <div class="p1">
+                    <div class="p1-content">
+                        <h2>PearPod</h2>
+                        <h3>The revolutionary earpiece to take the crown. High fidelity audio on demand.</h3>
+                        <h5>&#9660;</h5>
+                    </div>
                 </div>
             </div>
-            <div class="promo-content-right">
-                <h1>THE</h1>
-                <h2>PEARPHONE 6</h2>
-                <h3>$1080</h3>
-                <div class="promo-button">
-                    <a href="/store/pearphone6.aspx"><h4>BUY NOW</h4></a>
+        </a>
+        <a href="/store/pearhome.aspx">
+            <div class="body-p2">
+                <div class="p2">
+                    <div class="p2-content">
+                        <h2>PearHome</h2>
+                        <h3>Your own personal assistant where you need it the most.</h3>
+                        <h5>&#9660;</h5>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
-    <div class="body-eheader unselectable">
-        <div class="eheader">
-            <div class="eheader-content">
-                <h4>Current events</h4>
+    <div class="body-eventheader unselectable">
+        <div class="eventheader">
+            <div class="eventheader-content">
+                <h6>Recent events</h6>
             </div>
         </div>
     </div>

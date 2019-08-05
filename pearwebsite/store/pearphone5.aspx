@@ -105,6 +105,32 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        /* INCLUDED CONTENT */
+        .body-included {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: #f1f1f1 url(http://localhost:60359/content/email-pattern.png) repeat center;
+            background-attachment: fixed;
+            width: 100%;
+        }
+        .included {
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 700px;
+            position: relative;
+            z-index: 3;
+            color: #222222;
+        }
+        .included-content {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 90%;
+            margin: 3em 0 3em 40px;
+            z-index: 1;
+            text-align: center;
+        }
         /* DESCRIPTION */
         .body-description {
             font-family: cubano, sans-serif;
@@ -122,7 +148,6 @@
             position: relative;
             z-index: 3;
             color: #222222;
-            text-shadow: 1px 1px 2px #999999;
         }
         .description-content {
             box-sizing: border-box;
@@ -160,6 +185,14 @@
                 <div class="product-button">
                     <h4>BUY NOW</h4>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-included unselectable">
+        <div class="included">
+            <div class="included-content">
+                <h4>This product comes with</h4>
+                <asp:Image ID="included" runat="server" ImageUrl="/content/pearwatch.png" />
             </div>
         </div>
     </div>
