@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearphone5.aspx.cs" Inherits="store_pearphone5" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearpadmini.aspx.cs" Inherits="store_pearpadmini" %>
 
 <%-- HEAD --%>
 <asp:Content ID="head" ContentPlaceHolderID="head" Runat="Server">
@@ -170,18 +170,19 @@
                         ID="product"
                         runat="server"
                         CssClass="product-image"
-                        Height="270px"
+                        Style="margin-top: 28px;"
+                        Height="220px"
                         Width="150px"
-                        AlternateText="PearPhone5"
+                        AlternateText="PearPadMini"
                         ImageAlign="middle"
-                        ImageUrl="/content/pearphone5.png"
+                        ImageUrl="/content/pearpadmini.png"
                         />
                 </div>
             </div>
             <div class="product-content-right">
                 <h1>THE</h1>
-                <h2>PEARPHONE 5</h2>
-                <h3>$1080</h3>
+                <h2>PEARPAD MINI</h2>
+                <h3>$249</h3>
                 <div class="product-button">
                     <h4>BUY NOW</h4>
                 </div>
@@ -210,7 +211,7 @@
     <div class="body-description unselectable">
         <div class="description">
             <div class="description-content">
-                <h5>The PearPhone 5 featured major design changes in comparison to its predecessor. These included an aluminum-based body which was thinner and lighter than previous models, a taller screen with a nearly 16:9 aspect ratio, and Lightning, a new compact dock connector which replaced the 30-pin design used by previous PearPhone models. This was the second Pear phone to include its new 8 MP camera, which was first introduced on the PearPhone 4.</h5>
+                <h5>The PearPad Mini is a line of mini tablet computers. It is a sub-series of the PearPad line of tablets, with a reduced screen size of 7.9 inches, in contrast to the standard 9.7 inches. It features similar internal specifications to the PearPad 2, including its display resolution. </h5>
             </div>
         </div>
     </div>

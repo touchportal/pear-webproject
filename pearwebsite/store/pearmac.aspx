@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearphone5.aspx.cs" Inherits="store_pearphone5" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="pearmac.aspx.cs" Inherits="store_pearmac" %>
 
 <%-- HEAD --%>
 <asp:Content ID="head" ContentPlaceHolderID="head" Runat="Server">
@@ -170,18 +170,19 @@
                         ID="product"
                         runat="server"
                         CssClass="product-image"
-                        Height="270px"
-                        Width="150px"
+                        Style="margin-top: 70px;"
+                        Height="130px"
+                        Width="170px"
                         AlternateText="PearPhone5"
                         ImageAlign="middle"
-                        ImageUrl="/content/pearphone5.png"
+                        ImageUrl="/content/pearmac.png"
                         />
                 </div>
             </div>
             <div class="product-content-right">
                 <h1>THE</h1>
-                <h2>PEARPHONE 5</h2>
-                <h3>$1080</h3>
+                <h2>PEARMAC</h2>
+                <h3>$5000</h3>
                 <div class="product-button">
                     <h4>BUY NOW</h4>
                 </div>
@@ -192,12 +193,6 @@
         <div class="included">
             <div class="included-content">
                 <h4>This product comes with</h4>
-                <asp:Image
-                    ID="earpiece"
-                    runat="server"
-                    ImageUrl="/content/earpiece.png"
-                    Style="margin-top: 40px; width: 210px; height: 160px; margin-left: 3em;"
-                />
                 <asp:Image
                     ID="cable"
                     runat="server"
@@ -210,7 +205,7 @@
     <div class="body-description unselectable">
         <div class="description">
             <div class="description-content">
-                <h5>The PearPhone 5 featured major design changes in comparison to its predecessor. These included an aluminum-based body which was thinner and lighter than previous models, a taller screen with a nearly 16:9 aspect ratio, and Lightning, a new compact dock connector which replaced the 30-pin design used by previous PearPhone models. This was the second Pear phone to include its new 8 MP camera, which was first introduced on the PearPhone 4.</h5>
+                <h5>The sixth major revision uses a different display unit, omits the SuperDrive, and uses different production techniques from the older unibody versions. This allows it to be thinner at the edge than older models, with an edge thickness of 5.9 mm (but the same maximum depth). It also includes a dual microphone setup, and includes solid-state drive (SSD) or hard disk storage, or an Pear Fusion Drive, a hybrid of solid state and hard disk drives.</h5>
             </div>
         </div>
     </div>
