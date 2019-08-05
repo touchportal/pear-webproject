@@ -22,9 +22,11 @@ This repository uses [Semantic Versioning](https://semver.org/) to keep track of
 - ~~v1.6.2 -> Adding join and staff page~~
 - ~~v1.6.3 -> Fixing entire website~~
 - v1.6.4 -> Adding extra pages
+- v1.6.5 -> Finishing all store pages
 
 
 - v1.7.0 -> Contains every change in v1.7.*
-- v1.7.1 -> Fully implementing backend
+- v1.7.1 -> Implementing backend
+- v1.7.2 -> Fixing tables
 
 ---
