@@ -20,8 +20,8 @@ This repository uses [Semantic Versioning](https://semver.org/) to keep track of
 - v1.6.0 -> Contains every change in v1.6.*
 - ~~v1.6.1 -> Finishing about and contact page~~
 - ~~v1.6.2 -> Adding join and staff page~~
-- v1.6.3 -> Fixing entire website
-- v1.6.4 -> Adding simple backend
+- ~~v1.6.3 -> Fixing entire website~~
+- v1.6.4 -> Adding extra pages
 
 
 - v1.7.0 -> Contains every change in v1.7.*
