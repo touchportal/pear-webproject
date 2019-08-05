@@ -19,6 +19,18 @@ public partial class main : System.Web.UI.MasterPage
 
     protected void NavbuttonShop_Click(object sender, ImageClickEventArgs e)
     {
-        
+        if (Session["valid"] == null)
+        {
+            Response.Redirect("login.aspx");
+        }
+        else if (Session["valid"].ToString() == "member")
+        {
+            Response.Redirect("cart.aspx");
+        }
+        else
+        {
+            Session["message"] = "Unidentified user, Refreshing page";
+            Response.Redirect("home.aspx");
+        }
     }
 }
