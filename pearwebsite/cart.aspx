@@ -19,7 +19,7 @@
             cursor: default;
         }
         /* STYLE REPLACEMENTS */
-        h1, h2, h3, h4 {
+        h1, h2, h3, h4, .login-button {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -35,16 +35,9 @@
             color: #666666;
             font-size: 18pt;
         }
-        h4 {
+        h4, .login-button {
             color: #f1f1f1;
             font-size: 21pt;
-        }
-        .feedback-name-tbx, .feedback-email-tbx, .feedback-message-tbx {
-            font-family: roboto, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: inherit;
-            font-size: 16pt;
         }
         /* HEADER */
         .body-header {
@@ -74,28 +67,20 @@
             color: #ffffff;
         }
         /* CART */
-        .body-benefits {
+        .body-cart {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
-            background-color: #f1f1f1;
+            background-color: #ffffff;
             width: 100%;
         }
-        .benefits {
+        .cart {
             margin: 0 auto;
             padding: 3em 50px 1em 50px;
             max-width: 700px;
             position: relative;
         }
-        .benefits-title {
-            margin-bottom: 1em;
-            padding: 0 2em;
-            z-index: 2;
-            text-align: center;
-            color: inherit;
-            background-color: inherit;
-        }
-        .benefits-content {
+        .cart-content {
             box-sizing: border-box;
             display: inline-block;
             width: 95%;
@@ -105,39 +90,23 @@
             text-align: center;
             color: #222222;
         }
-        /* PAYROLL */
-        .body-benefits {
+        /* LOGIN */
+        .body-login {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
-            background-color: #f1f1f1;
+            background: #f1f1f1;
             width: 100%;
         }
-        .benefits {
+        .login {
             margin: 0 auto;
-            padding: 3em 50px 1em 50px;
+            padding: 2em 50px 2em 50px;
             max-width: 700px;
             position: relative;
         }
-        .benefits-title {
-            margin-bottom: 1em;
-            padding: 0 2em;
-            z-index: 2;
-            text-align: center;
-            color: inherit;
-            background-color: inherit;
-        }
-        .benefits-content {
-            box-sizing: border-box;
-            display: inline-block;
-            width: 95%;
-            margin-left: 20px;
-            margin-bottom: 3em;
-            z-index: 1;
-            text-align: center;
-            color: #222222;
-        }
+        .login-submit {
 
+        }
         .login-button {
             display: block;
             width: 35%;
@@ -152,19 +121,6 @@
             cursor: pointer;
             color: #ffffff;
         }
-        .body-login {
-            font-family: cubano, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            background: #f1f1f1 url(http://localhost:60359/content/doodles.png) repeat center;
-            background-attachment: fixed;
-            width: 100%;
-        }
-        .login {
-            margin: 0 auto;
-            padding: 3em 50px 4em 50px;
-            max-width: 700px;
-            position: relative;
     </style>
 </asp:Content>
 
@@ -177,9 +133,9 @@
             </div>
         </div>
     </div>
-    <div class="body-benefits unselectable">
-        <div class="benefits">
-            <div class="benefits-content">
+    <div class="body-cart unselectable">
+        <div class="cart">
+            <div class="cart-content">
                 <asp:GridView ID="GridView1" runat="server"></asp:GridView>
             </div>
         </div>
@@ -187,7 +143,7 @@
     <div class="body-login unselectable">
         <div class="login">
             <div class="login-submit">
-                <asp:Button ID="btn_logout_submit" runat="server" CssClass="login-button" Text="Log out" OnClick="btn_logout_submit_Click" />    
+                <asp:Button ID="btn_logout_submit" runat="server" CssClass="login-button" Text="Log out" OnClick="btn_logout_submit_Click" />
             </div>
         </div>  
     </div>
