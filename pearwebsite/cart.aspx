@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/login.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="cart.aspx.cs" Inherits="cart" %>
 
 <%-- HEAD --%>
 <asp:Content ID="head" ContentPlaceHolderID="head" Runat="Server">
@@ -19,7 +19,7 @@
             cursor: default;
         }
         /* STYLE REPLACEMENTS */
-        h1, h2, h3, h4, .login-button {
+        h1, h2, h3, h4 {
             font-family: cubano, sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -35,11 +35,11 @@
             color: #666666;
             font-size: 18pt;
         }
-        h4, .login-button {
+        h4 {
             color: #f1f1f1;
             font-size: 21pt;
         }
-        .login-email-tbx, .login-password-tbx {
+        .feedback-name-tbx, .feedback-email-tbx, .feedback-message-tbx {
             font-family: roboto, sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -73,7 +73,85 @@
             margin: 2em 0;
             color: #ffffff;
         }
-        /* FEEDBACK CONTENT */
+        /* CART */
+        .body-benefits {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+        .benefits {
+            margin: 0 auto;
+            padding: 3em 50px 1em 50px;
+            max-width: 700px;
+            position: relative;
+        }
+        .benefits-title {
+            margin-bottom: 1em;
+            padding: 0 2em;
+            z-index: 2;
+            text-align: center;
+            color: inherit;
+            background-color: inherit;
+        }
+        .benefits-content {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 95%;
+            margin-left: 20px;
+            margin-bottom: 3em;
+            z-index: 1;
+            text-align: center;
+            color: #222222;
+        }
+        /* PAYROLL */
+        .body-benefits {
+            font-family: cubano, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+        .benefits {
+            margin: 0 auto;
+            padding: 3em 50px 1em 50px;
+            max-width: 700px;
+            position: relative;
+        }
+        .benefits-title {
+            margin-bottom: 1em;
+            padding: 0 2em;
+            z-index: 2;
+            text-align: center;
+            color: inherit;
+            background-color: inherit;
+        }
+        .benefits-content {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 95%;
+            margin-left: 20px;
+            margin-bottom: 3em;
+            z-index: 1;
+            text-align: center;
+            color: #222222;
+        }
+
+        .login-button {
+            display: block;
+            width: 35%;
+            margin: 1em 230px;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none;
+            padding: 10px 2em;
+            background-color: #333333;
+            box-shadow: 5px 5px 10px #333333;
+            border-radius: 50px;
+            cursor: pointer;
+            color: #ffffff;
+        }
         .body-login {
             font-family: cubano, sans-serif;
             font-weight: 400;
@@ -87,51 +165,6 @@
             padding: 3em 50px 4em 50px;
             max-width: 700px;
             position: relative;
-        }
-        .login-email, .login-password {
-            margin-bottom: 3em;
-            padding: 1em 2em;
-            z-index: 2;
-            text-align: center;
-            color: #f1f1f1;
-            background-color: #333333;
-            box-shadow: 5px 5px 10px #333333;
-        }
-        .login-email-content, .login-password-content {
-            box-sizing: border-box;
-            display: inline-block;
-            width: 95%;
-            margin-left: 20px;
-            margin-bottom: 3em;
-            z-index: 1;
-            text-align: center;
-            color: #222222;
-        }
-        .login-email-tbx, .login-password-tbx {
-            width: 90%;
-            height: 50px;
-            font-size: 20pt;
-            box-shadow: 5px 5px 10px #333333;
-        }
-        .login-submit {
-
-        }
-        .login-button {
-            display: block;
-            width: 35%;
-            margin: 1em 230px;
-            text-align: center;
-            vertical-align: middle;
-            text-decoration: none;
-            padding: 10px 2em;
-            background-color: #333333;
-            box-shadow: 5px 5px 10px #333333;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-        .login-button:hover {
-            background-color: #222222;
-        }
     </style>
 </asp:Content>
 
@@ -140,28 +173,23 @@
     <div class="body-header unselectable">
         <div class="header">
             <div class="header-content">
-                <h1>Login</h1>
+                <h1>Cart</h1>
             </div>
         </div>
     </div>
-    <div class="body-login">
-        <div class="login">
-            <div class="login-email">
-                <h4>Email</h4>
-            </div>
-            <div class="login-email-content">
-                <asp:TextBox ID="tbx_login_email" runat="server" CssClass="login-email-tbx"></asp:TextBox>
-            </div>
-            <div class="login-password">
-                <h4>Password</h4>
-            </div>
-            <div class="login-password-content">
-                <asp:TextBox ID="tbx_login_password" runat="server" CssClass="login-password-tbx"></asp:TextBox>
-            </div>
-            <div class="login-submit">
-                <asp:Button ID="btn_login_submit" runat="server" CssClass="login-button" Text="Login" OnClick="btn_login_submit_Click" />
-                <asp:Button ID="btn_register_submit" runat="server" CssClass="login-button" Text="Register" />
+    <div class="body-benefits unselectable">
+        <div class="benefits">
+            <div class="benefits-content">
+                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
             </div>
         </div>
+    </div>
+    <div class="body-login unselectable">
+        <div class="login">
+            <div class="login-submit">
+                <asp:Button ID="btn_logout_submit" runat="server" CssClass="login-button" Text="Log out" OnClick="btn_logout_submit_Click" />    
+            </div>
+        </div>  
     </div>
 </asp:Content>
+
