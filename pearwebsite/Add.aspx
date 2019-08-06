@@ -1,13 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="admin.aspx.cs" Inherits="admin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="Add.aspx.cs" Inherits="Add" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" Runat="Server">
-    <p>
-        <br />
-        <asp:DropDownList ID="ddl" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_SelectedIndexChanged">
-        </asp:DropDownList>
-    </p>
     <p>
         Name:<asp:TextBox ID="txtname" runat="server"></asp:TextBox>
     </p>
@@ -24,7 +19,7 @@
         Phone Number:<asp:TextBox ID="txtphone" runat="server"></asp:TextBox>
     </p>
     <p>
-        <asp:Button ID="btnmodify" runat="server" Text="modify" OnClick="btnmodify_Click" />
+        <asp:Button ID="btnadd" runat="server" Text="add" OnClick="btnadd_Click" style="width: 41px" />
         </p>
     <p>
         <asp:Button ID="adminhome" runat="server" Text="Admin Home" OnClick="adminhome_Click" />

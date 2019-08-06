@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 
-public partial class admin : System.Web.UI.Page
+public partial class Delete : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -29,30 +29,24 @@ public partial class admin : System.Web.UI.Page
             SqlDataReader dr2 = cmdAdd.ExecuteReader();
             grid.DataSource = dr2;
             grid.DataBind();
+
+
             dr2.Close();
-
             connAdd.Close();
-        }
 
+        }
     }
 
-    protected void btnmodify_Click(object sender, EventArgs e)
+    protected void btndelete_Click(object sender, EventArgs e)
     {
         SqlConnection connAdd = new SqlConnection("Data Source=THEDUCKZ\\SQLEXPRESS; Initial Catalog = Pear; Integrated Security=SSPI");
         connAdd.Open();
         string mySQL;
-        mySQL = "update userid set name ='" +
-                    txtname.Text.Trim() + "', email='" +
-                    txtemail.Text.Trim() + "', password='" +
-                    txtpass.Text.Trim() + "', address='" +
-                    txtadd.Text.Trim() + "', [phone number]='" +
-                    txtphone.Text.Trim() + "'" 
-                    + " where name ='" + ddl.SelectedValue + "'";
-
+        mySQL = "Delete from userid where name ='" + ddl.SelectedValue + "'";
         SqlCommand cmdAdd = new SqlCommand(mySQL, connAdd);
         cmdAdd.ExecuteNonQuery();
         connAdd.Close();
-        Response.Redirect("admin.aspx");
+        Response.Redirect("Delete.aspx");
     }
 
     protected void ddl_SelectedIndexChanged(object sender, EventArgs e)
@@ -72,6 +66,7 @@ public partial class admin : System.Web.UI.Page
             txtadd.Text = dr["address"].ToString();
             txtphone.Text = dr["phone Number"].ToString();
         }
+
 
         dr.Close();
         connAdd.Close();

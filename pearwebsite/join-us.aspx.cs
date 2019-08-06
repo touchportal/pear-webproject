@@ -19,7 +19,7 @@ public partial class join_us : System.Web.UI.Page
         }
         else if (Session["valid"].ToString() == "admin")
         {
-            Response.Redirect("admin.aspx");
+            Response.Redirect("adminhome.aspx");
         }
         else
         {
