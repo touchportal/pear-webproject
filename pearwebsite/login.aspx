@@ -37,7 +37,7 @@
         }
         h4, .login-button {
             color: #f1f1f1;
-            font-size: 21pt;
+            font-size: 15pt;
         }
         .login-email-tbx, .login-password-tbx {
             font-family: roboto, sans-serif;
@@ -110,7 +110,7 @@
         .login-email-tbx, .login-password-tbx {
             width: 90%;
             height: 50px;
-            font-size: 10pt;
+            font-size: 20pt;
             box-shadow: 5px 5px 10px #333333;
         }
         .login-submit {
